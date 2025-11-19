@@ -2,9 +2,9 @@ import MessageComponent from "@/components/MessageComponent";
 
 const ChatBotDemo = () => {
     return(
-        <main className="flex flex-col items-center h-screen justify-center w-[90%] mx-auto">
-            <h1 className="text-black font-semibold text-xl">GreenBot AI</h1>
+        <main className="flex flex-col items-center h-screen justify-center w-[90%] max-w-[600px] mx-auto">
             <div className="w-full flex flex-col h-[calc(100%_-_200px)] no-scrollbar gap-8 overflow-y-auto">
+                <h1 className="text-black font-semibold text-xl text-center">GreenBot AI</h1>
                 <MessageComponent
                     text={"Hola"}
                     belongsTo={true}
@@ -26,6 +26,30 @@ const ChatBotDemo = () => {
                         "1. El Diagnóstico: ¿Cuánto se ha calentado?\n" +
                         "El planeta ya se ha calentado aproximadamente 1.2c (grados Celsius) en promedio, en comparación con los niveles preindustriales (antes de 1850).\n" +
                         "Puede que 1.2c no parezca mucho, pero este aumento en el promedio global es suficiente para alterar drásticamente nuestros sistemas climáticos. El objetivo internacional, establecido en el Acuerdo de París, es limitar este calentamiento a 1.5c para evitar los impactos más catastróficos. Estamos peligrosamente cerca de ese límite."}
+                    belongsTo={false}
+                />
+                <MessageComponent
+                    text={`Bueno, ya entendí lo anterior. Pero ahora quiero saber sobre desarrollo sustentable, ¿es lo mismo que ser "ecológico"?`}
+                    belongsTo={true}
+                />
+                <MessageComponent
+                    text={`Es muy común confundirlos, pero no son exactamente lo mismo. Ser ecológico se centra casi exclusivamente en cuidar el medio ambiente. El Desarrollo Sustentable es un concepto mucho más amplio. Se define oficialmente como: "Satisfacer las necesidades del presente sin comprometer la capacidad de las futuras generaciones para satisfacer las suyas". Imagina un tripie; para que funcione, necesita equilibrio entre tres pilares:
+
+Económico: Generar riqueza de forma justa.
+
+Social: Equidad y bienestar para las personas.
+
+Ambiental: Cuidar la naturaleza. Si falta uno, el sistema se cae. ¿Te hace sentido esta diferencia?
+
+Usuario: Sí, entiendo, es más complejo. ¿Y cuáles son esos objetivos famosos de la ONU de los que hablan?
+
+IA (Respuesta 2): Te refieres a los ODS (Objetivos de Desarrollo Sostenible). Son básicamente el "plan maestro" del mundo para el año 2030. Son 17 objetivos diseñados para solucionar los grandes problemas globales. No solo tratan sobre el clima (como el ODS 13: Acción por el Clima), sino que también incluyen cosas como:
+
+ODS 1: Fin de la pobreza.
+
+ODS 4: Educación de calidad.
+
+ODS 5: Igualdad de género. La idea es que no puedes cuidar el planeta si la gente se muere de hambre, y no puedes erradicar el hambre si destruyes la tierra donde cultivas. Todo está conectado.`}
                     belongsTo={false}
                 />
             </div>
